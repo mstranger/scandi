@@ -21,6 +21,16 @@ body {
     line-height: 62px;
 }
 
+.h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+section {
+    padding: 65px 100px 0;
+}
+
 /* header */
 
 .menu {
@@ -94,6 +104,72 @@ header aside p.info {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+}
+
+/* about */
+
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+#about h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about img.mask {
+    width: 445px;
+    height: 465px;
+}
+
+#about .main {
+    display: flex;
+    width: 1035px;
+    align-self: center;
+    justify-content: space-between;
+}
+
+#about .main .content {
+    width: 530px;
+    line-height: 30px;
+}
+
+#about .main .content p:first-child {
+    margin-bottom: 30px;
+}
+
+#about .footer {
+    margin-top: 21px;
+    margin-left: -100px;
+    margin-right: -100px;
+    background-color: #8d7370;
+}
+
+#about .footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 81px;
+}
+
+#about .footer li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 37px;
+    text-align: center;
+}
+
+#about .footer li:first-child {
+    margin-left: 182px;
+}
+
+#about .footer li:last-child {
+    margin-right: 182px;
 }
 
 /* footer */
