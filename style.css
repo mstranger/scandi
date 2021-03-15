@@ -27,8 +27,12 @@ body {
     line-height: 50px;
 }
 
+.title {
+    text-transform: uppercase;
+}
+
 section {
-    padding: 65px 100px 0;
+    padding: 65px 100px;
 }
 
 /* header */
@@ -111,6 +115,7 @@ header aside p.info {
 #about {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 #about h2 {
@@ -231,6 +236,69 @@ header aside p.info {
     height: 30px;
     background: url("img/arrow-right.png") no-repeat bottom;
     background-size:contain;
+}
+
+/* team */
+
+#team {
+    background-color: #e2c4ba;
+}
+
+#team .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#team .content {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 35px;
+}
+
+#team .card {
+    width: 320px;
+}
+
+#team .card > img {
+    margin-bottom: 10px;
+}
+
+#team .card .desc {
+    line-height: 30px;
+}
+
+#team .footer {
+    width: 1200px;
+}
+
+#team .footer .work-process {
+    display: flex;
+    gap: 20px;
+}
+
+#team .footer .work-process li {
+    width: 285px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#team .footer .work-process li .number {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: #8d7370;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+    margin: 0 auto 20px auto;
 }
 
 /* footer */
