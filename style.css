@@ -172,6 +172,67 @@ header aside p.info {
     margin-right: 182px;
 }
 
+/* our-work */
+
+#our-work .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#our-work .content .hover {
+    position: absolute;
+    width: 488px;
+    height: 451px;
+    background: rgba(100, 72, 69, 0.8);
+    color: #ffffff;
+}
+
+#our-work .content .hover p:first-child {
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 86px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+#our-work .content .hover p:last-child {
+    width: 418px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#our-work .content img {
+    height: 450px;
+}
+
+#our-work h2 {
+    text-transform: uppercase;
+}
+
+#our-work .footer {
+    text-align: center;
+}
+
+#our-work .footer .more {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#our-work .footer .more .arrow-right {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: url("img/arrow-right.png") no-repeat bottom;
+    background-size:contain;
+}
+
 /* footer */
 
 footer ul.contacts {
