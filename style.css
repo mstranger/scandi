@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    background-color: #efe6e4;
+    width: 1400px;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #533738;
+}
+
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    margin: 0;
+    /* margin-bottom: 24px; */
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62px;
+}
+
+.menu {
+    width: 1200px;
+    height: 25px;
+    padding: 36px 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    color: lightseagreen;
+}
+
+.menu .menu-item:first-child {
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-item i.logo {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("img/no_name_1.png");
+}
+
+.menu .menu-item:last-child {
+    margin-left: 35px;
+}
+
+.menu-item:first-child {
+    text-transform: uppercase;
+}
+
+header {
+    background: url("img/unsplash_1.png") no-repeat;
+    background-size: contain;
+    height: 715px;
+}
+
+header aside {
+    margin-top: 54px;
+    width: 500px;
+    margin-left: 180px;
+}
+
+header aside a[href="#feedback"] {
+    display: inline-block;
+    /* margin-top: 46px; */
+    padding: 25px 65px;
+    background-color: #cc8b86;
+    line-height: 25px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header aside a[href="#feedback"]:hover {
+    box-shadow: 0 0 2px #000;
+}
+
+header aside p.info {
+    margin-top: 24px;
+    margin-bottom: 46px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
