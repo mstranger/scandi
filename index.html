@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Scandi</title>
-  <link rel="stylesheet" href="style.css?d">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,13 +13,13 @@
   <header>
     <nav>
       <ul class="menu">
-        <li class="menu-item"><i class="logo"></i><a href="#">Scandi</a></li>
+        <li class="menu-item"><i class="logo"></i>Scandi</li>
         <li class="menu-item"><a href="#about">О компании</a></li>
         <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
         <li class="menu-item"><a href="#team">Команда</a></li>
         <li class="menu-item"><a href="#our-work">Как мы работаем</a></li>
         <li class="menu-item"><a href="#review">Отзывы клиетов</a></li>
-        <li class="menu-item"><a href="#feedback">Оставить заявку</a></li>
+        <li class="menu-item"><a href="#request">Оставить заявку</a></li>
         <li class="menu-item">+7 (981) 857-46-24</li>
       </ul>
     </nav>
@@ -135,19 +135,17 @@
       <h2 class="h2 title">Отзывы</h2>
       <div class="content">
         <div class="navigation-button"><span class="arrow prev"></span></div>
-        <div class="customer-review">
-          <blockquote>
-            <p>
-              «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-              <br><br>
-              Работа шла быстро, было очень приятно общаться и взаимодествовайть
-              с сотрудниками. Не ожидала, что это будет так легко!
-              <br><br>
-              Буду советовать и своим друзьям к вам обращаться!»
-            </p>
-            <cite>Анна Беловская</cite>
-          </blockquote>
-        </div>
+        <blockquote class="customer-review">
+          <p>
+            «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+            <br><br>
+            Работа шла быстро, было очень приятно общаться и взаимодествовайть
+            с сотрудниками. Не ожидала, что это будет так легко!
+            <br><br>
+            Буду советовать и своим друзьям к вам обращаться!»
+          </p>
+          <cite>Анна Беловская</cite>
+        </blockquote>
         <div class="examples">
           <img src="img/example-1.png" alt="review example one">
           <img src="img/example-2.png" alt="review example two">
@@ -155,7 +153,25 @@
         <div class="navigation-button"><span class="arrow next"></span></div>
       </div>
     </section>
-    <section id="feedback"></section>
+
+    <section id="request">
+      <div class="request-form">
+        <h2 class="h2 title">Оставить заявку</h2>
+        <p class="request-info">
+          Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
+        </p>
+        <form>
+          <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+          <input type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+          <input type="submit" value="Оставить заявку">
+        </form>
+      </div>
+      <div class="address-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123607!2d30.320894615595996!3d59.93879686904854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1615921471734!5m2!1sru!2sua"
+          width="590" height="624" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
   </main>
 
   <footer>
