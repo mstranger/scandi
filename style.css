@@ -182,21 +182,32 @@ header aside p.info {
 
 #our-work .content {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     gap: 30px 20px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-#our-work .content .hover {
+#our-work .content .selected-image .image-hover {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#our-work .content .selected-image .image-hover:hover {
+    opacity: 1;
+}
+
+#our-work .content .image-hover {
     position: absolute;
+    top: 0;
     width: 488px;
     height: 451px;
     background: rgba(100, 72, 69, 0.8);
     color: #ffffff;
 }
 
-#our-work .content .hover p:first-child {
+#our-work .content .image-hover p:first-child {
     width: 270px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -207,7 +218,7 @@ header aside p.info {
     line-height: 37px;
 }
 
-#our-work .content .hover p:last-child {
+#our-work .content .image-hover p:last-child {
     width: 418px;
     margin: 0 auto;
     font-size: 18px;
@@ -349,6 +360,12 @@ header aside p.info {
     height: 72px;
     background-color: #cc8b86;
     border-radius: 50%;
+}
+
+#review .content .navigation-button:hover {
+    cursor: pointer;
+    background-color: #cc8b86b4;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #review .content .navigation-button:last-of-type {
