@@ -51,10 +51,10 @@ section {
 .menu a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    /* color: lightseagreen; */
     color: #ac6965;
 }
 
@@ -88,7 +88,7 @@ header aside {
     margin-left: 180px;
 }
 
-header aside a[href="#feedback"] {
+header aside a[href="#request"] {
     display: inline-block;
     padding: 25px 65px;
     background-color: #cc8b86;
@@ -99,8 +99,8 @@ header aside a[href="#feedback"] {
     font-size: 20px;
 }
 
-header aside a[href="#feedback"]:hover {
-    box-shadow: 0 0 2px #000;
+header aside a[href="#request"]:hover {
+    box-shadow: 2px 2px 4px #353535;
 }
 
 header aside p.info {
@@ -240,13 +240,15 @@ header aside p.info {
 #our-work .footer .more {
     font-size: 30px;
     font-weight: 500;
+    text-decoration: none;
+    color: inherit;
 }
 
 #our-work .footer .more .arrow-right {
     display: inline-block;
     width: 60px;
     height: 30px;
-    background: url("img/arrow-right.png") no-repeat bottom;
+    background: url("img/arrow-right.svg") no-repeat bottom;
     background-size:contain;
 }
 
@@ -364,8 +366,9 @@ header aside p.info {
 
 #review .content .navigation-button:hover {
     cursor: pointer;
-    background-color: #cc8b86b4;
-    transition: background-color 0.3s ease-in-out;
+    transform: rotate(360deg);
+    box-shadow: 0 0 2px #343434;
+    transition: all .5s ease;
 }
 
 #review .content .navigation-button:last-of-type {
@@ -457,6 +460,21 @@ header aside p.info {
     font-size: 18px;
     line-height: 30px;
     opacity: 0.6;
+}
+
+#request .request-form form input {
+    font-size: 18px;
+    line-height: 30px;
+    color: #f6ede9;
+}
+
+#request form input[type="submit"]:focus {
+    transform: translateX(2px) translateY(2px);
+}
+
+#request form input[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 6px #2b2021;
 }
 
 /* footer */
