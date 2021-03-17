@@ -65,6 +65,10 @@ section {
     align-items: center;
 }
 
+.menu .menu-item:first-child:hover {
+    cursor: default;
+}
+
 .menu .menu-item i.logo {
     display: block;
     width: 25px;
