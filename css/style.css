@@ -17,6 +17,10 @@
 
 /* FIX: get rid of the bottom scroll */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 1400px;
   background-color: var(--bg-color);
