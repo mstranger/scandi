@@ -2,12 +2,21 @@
 
 /* general */
 
+/* FIX: get rid of the bottom scroll */
+
 body {
   width: 1400px;
   background-color: #efe6e4;
   font-family: Montserrat, sans-serif;
+  line-height: 30px;
+  font-weight: normal;
   font-size: 18px;
   color: #533738;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .h1 {
@@ -20,6 +29,7 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 50px;
+  margin: 0;
 }
 
 .title {
@@ -30,7 +40,11 @@ section {
   padding: 65px 100px;
 }
 
-/* header */
+/* navigation menu */
+
+.page-header {
+  margin-bottom: -97px;
+}
 
 .menu {
   width: 1200px;
@@ -65,29 +79,32 @@ section {
 }
 
 .menu .menu-item i.logo {
-  display: block;
+  background-image: url('../img/logo.png');
+  background-size: cover;
   width: 25px;
   height: 25px;
-  background-image: url('img/no_name_1.png');
 }
 
 .menu .menu-item:last-child {
   margin-left: 35px;
 }
 
-header {
-  background: url('img/unsplash_1.png') no-repeat;
+/* promo */
+
+#promo {
+  background: url('../img/promo.jpg') no-repeat;
   background-size: contain;
-  height: 715px;
+  height: 650px;
+  padding-bottom: 0;
 }
 
-header aside {
-  margin-top: 54px;
+#promo .container {
+  margin-top: 80px;
   width: 500px;
-  margin-left: 180px;
+  margin-left: 80px;
 }
 
-header aside a[href='#request'] {
+#promo .container .button-promo {
   display: inline-block;
   padding: 25px 65px;
   background-color: #cc8b86;
@@ -98,11 +115,11 @@ header aside a[href='#request'] {
   font-size: 20px;
 }
 
-header aside a[href='#request']:hover {
+#promo .container .button-promo:hover {
   box-shadow: 2px 2px 4px #353535;
 }
 
-header aside p.info {
+#promo .container p.info {
   margin-top: 24px;
   margin-bottom: 46px;
   font-size: 18px;
@@ -120,6 +137,7 @@ header aside p.info {
 
 #about h2 {
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -247,7 +265,7 @@ header aside p.info {
   display: inline-block;
   width: 60px;
   height: 30px;
-  background: url('img/arrow-right.svg') no-repeat bottom;
+  background: url('../img/arrow-right.svg') no-repeat bottom;
   background-size: contain;
 }
 
@@ -382,18 +400,13 @@ header aside p.info {
   width: 72px;
   height: 72px;
   display: inline-block;
-  background: url('img/arrow-small.svg') no-repeat center;
+  background: url('../img/arrow-small.svg') no-repeat center;
   color: #f5f2ed;
 }
 
 #review .arrow.prev {
   transform: rotate(180deg);
 }
-
-/* #review .content .navigation-button:hover {
-    box-shadow: 1px 2px 16px 0px rgba(89,87,87,0.85);
-    cursor: pointer;
-} */
 
 /* request */
 
@@ -495,4 +508,9 @@ footer ul.contacts li:first-child {
 
 footer ul.contacts li:last-child {
   margin-left: auto;
+}
+
+footer .phone {
+  text-decoration: none;
+  color: inherit;
 }
