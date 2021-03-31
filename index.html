@@ -7,7 +7,7 @@
   <title>Scandi</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css?casdf" />
+  <link rel="stylesheet" href="css/style.css?cf" />
 </head>
 
 <body>
@@ -76,28 +76,55 @@
     </section>
 
     <section id="our-work">
-      <div class="title">
-        <h2 class="h2">Наши работы</h2>
-      </div>
-      <!-- NOTE: tag 'article' and 'display: grid' would be better -->
-      <div class="content">
-        <div class="selected-image">
-          <img src="img/photo-1.png" alt="Квартра студия с уютным интерьером" height="431" />
-          <div class="image-hover">
-            <p>Квартира-студия<br>30 кв.м.</p>
-            <p>
-              В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-              ребятам уютный интерьер, отсылающий к виллам островов Бали.
-            </p>
-          </div>
+      <div class="grid-container">
+        <div class="title">
+          <h2 class="h2">Наши работы</h2>
         </div>
-        <!-- NOTE: use jpg format -->
-        <img src="img/photo-2.png" alt="Уютная кухня" width="662" height="431" />
-        <img src="img/photo-3.png" alt="Жилая комната" width="662" height="431" />
-        <img src="img/photo-4.png" alt="Ванная комната" height="431" />
-      </div>
-      <div class="footer">
-        <a href="#" class="more">Смотреть ещё <span class="arrow-right"></span></a>
+        <div class="content">
+          <article class="content-item selected-image">
+            <img src="img/photo-1.jpg" alt="Квартра студия с уютным интерьером" height="431" />
+            <div class="image-hover">
+              <p>Квартира-студия<br>30 кв.м.</p>
+              <p>
+                В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+                ребятам уютный интерьер, отсылающий к виллам островов Бали.
+              </p>
+            </div>
+          </article>
+          <article class="content-item">
+            <img src="img/photo-2.jpg" alt="Уютная кухня" width="662" height="431" />
+            <div class="image-hover">
+              <p>Квартира-студия<br>30 кв.м.</p>
+              <p>
+                В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+                ребятам уютный интерьер, отсылающий к виллам островов Бали.
+              </p>
+            </div>
+          </article>
+          <article class="content-item">
+            <img src="img/photo-3.jpg" alt="Жилая комната" width="662" height="431" />
+            <div class="image-hover">
+              <p>Квартира-студия<br>30 кв.м.</p>
+              <p>
+                В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+                ребятам уютный интерьер, отсылающий к виллам островов Бали.
+              </p>
+            </div>
+          </article>
+          <article class="content-item">
+            <img src="img/photo-4.jpg" alt="Ванная комната" height="431" />
+            <div class="image-hover">
+              <p>Квартира-студия<br>30 кв.м.</p>
+              <p>
+                В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+                ребятам уютный интерьер, отсылающий к виллам островов Бали.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="footer">
+          <a href="#" class="more">Смотреть ещё <span class="arrow-right"></span></a>
+        </div>
       </div>
     </section>
 
