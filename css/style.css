@@ -319,26 +319,22 @@ section {
   -webkit-box-orient: vertical;
 }
 
-#our-work .content img {
-  /* height: 16.875rem; */
-}
-
 #our-work h2 {
   text-transform: uppercase;
 }
 
-#our-work .footer {
+#our-work .our-work-footer {
   text-align: center;
 }
 
-#our-work .footer .more {
+#our-work .our-work-footer .more {
   font-size: 1.875rem;
   font-weight: 500;
   text-decoration: none;
   color: inherit;
 }
 
-#our-work .footer .more .arrow-right {
+#our-work .our-work-footer .more .arrow-right {
   display: inline-block;
   width: 3.75rem;
   height: 1.875rem;
