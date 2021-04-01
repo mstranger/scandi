@@ -24,6 +24,8 @@ html {
 
 body {
   min-width: 75em;
+  max-width: 87.5rem;
+  margin: 0 auto;
   background-color: var(--bg-color);
   font-family: Montserrat, sans-serif;
   line-height: var(--page-line-height);
@@ -53,16 +55,6 @@ ul {
 .title {
   text-transform: uppercase;
 }
-
-/* .container {
-    margin: 0 auto;
-    width: 1036px;
-}
-
-.wide-container {
-    margin: 0 auto;
-    width: 1200px;
-} */
 
 .visually-hidden {
   position: absolute;
