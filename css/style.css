@@ -237,8 +237,6 @@ section {
 
 #advantages {
   margin-top: 1.875rem;
-  margin-left: -6.25rem;
-  margin-right: -6.25rem;
   background-color: var(--footer-bg-color);
   padding-top: 5.3125rem;
   padding-bottom: 5.0625rem;
@@ -257,14 +255,6 @@ section {
   color: var(--white-color);
   line-height: 2.3125rem;
   text-align: center;
-}
-
-#advantages li:first-child {
-  margin-left: 11.375rem;
-}
-
-#advantages li:last-child {
-  margin-right: 11.375rem;
 }
 
 /* our-work */
