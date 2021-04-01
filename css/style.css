@@ -30,6 +30,7 @@ body {
   font-weight: normal;
   font-size: var(--page-font-size);
   color: var(--text-color);
+  counter-reset: section;
 }
 
 ul {
@@ -393,26 +394,27 @@ section {
   gap: 1.25rem;
 }
 
+#team .work-process li::before {
+  counter-increment: section;
+  content: counter(section);
+  width: 4.375rem;
+  height: 4.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+  font-size: 1.875rem;
+  color: white;
+  background-color: var(--footer-bg-color);
+  border-radius: 50%;
+}
+
 #team .wide-container .work-process li {
   width: 17.8125rem;
   list-style: none;
-  font-size: var(--page-font-size);
-  line-height: var(--page-line-height);
-  font-weight: 400;
   text-align: center;
-}
-
-#team .wide-container .work-process li .number {
-  display: block;
-  width: 4.375rem;
-  height: 4.375rem;
-  background-color: var(--footer-bg-color);
-  color: var(--white-color);
-  border-radius: 50%;
-  font-weight: 500;
-  font-size: var(--page-font-size);
-  line-height: 4.375rem;
-  margin: 0 auto 1.25rem auto;
 }
 
 /* review */
