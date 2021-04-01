@@ -30,7 +30,6 @@ body {
   font-weight: normal;
   font-size: var(--page-font-size);
   color: var(--text-color);
-  counter-reset: section;
 }
 
 ul {
@@ -162,8 +161,9 @@ section {
 /* promo */
 
 #promo {
-  background: url('../img/promo.jpg') no-repeat;
-  background-size: contain;
+  background: url('../img/promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 39.125rem;
   padding-bottom: 0;
 }
@@ -171,7 +171,7 @@ section {
 #promo .container {
   margin-top: 5rem;
   margin-left: 5rem;
-  width: 31.25rem;
+  width: 46%;
 }
 
 #promo .container .button-promo {
@@ -200,9 +200,11 @@ section {
 /* about */
 
 #about {
+  padding-bottom: 1.25rem;
+}
+
+#about .conteiner {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 0;
 }
 
 #about h2 {
@@ -213,30 +215,29 @@ section {
 }
 
 #about img.mask {
-  width: 27.8125rem;
-  height: 29.0625rem;
+  margin-right: 4.0625rem;
+  align-self: flex-start;
 }
 
 #about .main {
+  width: 90%;
   display: flex;
-  width: 64.75rem;
   align-self: center;
-  justify-content: space-between;
+  margin: 0 auto;
 }
 
 #about .main .content {
-  width: 33.125rem;
   line-height: var(--page-line-height);
 }
 
 #about .main .content p:first-child {
   margin-bottom: 1.875rem;
+  margin-top: 0;
 }
 
 /* advantages */
 
 #advantages {
-  margin-top: 1.875rem;
   background-color: var(--footer-bg-color);
   padding-top: 5.3125rem;
   padding-bottom: 5.0625rem;
@@ -244,7 +245,7 @@ section {
 
 #advantages ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #advantages li {
@@ -371,11 +372,11 @@ section {
 
 #team .content {
   display: flex;
-  justify-content: center;
-  gap: 2.375rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 2.1875rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 #team .card {
@@ -396,7 +397,8 @@ section {
 
 #team .wide-container .work-process {
   display: flex;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  counter-reset: section;
 }
 
 #team .work-process li::before {
@@ -417,12 +419,16 @@ section {
 }
 
 #team .wide-container .work-process li {
-  width: 17.8125rem;
+  width: 25%;
   list-style: none;
   text-align: center;
 }
 
 /* review */
+
+#review .container {
+  width: 100%;
+}
 
 #review .title {
   margin-bottom: 2.5rem;
@@ -431,18 +437,20 @@ section {
 
 #review .content {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 #review .content .customer-review {
-  width: 25.5rem;
+  width: 36%;
 }
 
 #review blockquote {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.875rem;
+  margin: 0;
+  margin-right: 1.125rem;
 }
 
 #review blockquote cite {
@@ -454,7 +462,6 @@ section {
 
 #review .content .examples {
   width: 25.5rem;
-  margin-left: 1.25rem;
 }
 
 #review .content .examples img:first-child {
@@ -478,11 +485,13 @@ section {
 }
 
 #review .content .navigation-button:last-of-type {
-  margin-left: 1.75rem;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 #review .content .navigation-button:first-of-type {
-  margin-right: 1.75rem;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 #review .arrow {
@@ -507,17 +516,13 @@ section {
 }
 
 #request .container {
-  display: flex;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #request .request-form {
-  flex: 1;
   margin-left: 5rem;
-}
-
-#request .address-map {
-  flex: 1;
+  margin-right: 1.25rem;
 }
 
 #request .request-form form {
@@ -583,6 +588,11 @@ section {
 #request form input[type='submit']:hover {
   cursor: pointer;
   box-shadow: 0.125rem 0.25rem 0.375rem var(--button-hover-bg-color);
+}
+
+#request .address-map {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* footer */
