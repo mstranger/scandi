@@ -65,6 +65,19 @@ ul {
     width: 1200px;
 } */
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
 section {
   padding: 4.0625rem 6.25rem;
 }
@@ -220,21 +233,23 @@ section {
   margin-bottom: 1.875rem;
 }
 
-#about .footer {
+/* advantages */
+
+#advantages {
   margin-top: 1.875rem;
   margin-left: -6.25rem;
   margin-right: -6.25rem;
   background-color: var(--footer-bg-color);
-}
-
-#about .footer ul {
-  display: flex;
-  justify-content: space-between;
   padding-top: 5.3125rem;
   padding-bottom: 5.0625rem;
 }
 
-#about .footer li {
+#advantages ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#advantages li {
   list-style: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -244,11 +259,11 @@ section {
   text-align: center;
 }
 
-#about .footer li:first-child {
+#advantages li:first-child {
   margin-left: 11.375rem;
 }
 
-#about .footer li:last-child {
+#advantages li:last-child {
   margin-right: 11.375rem;
 }
 
